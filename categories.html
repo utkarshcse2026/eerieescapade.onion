@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EerieEscapade.onion</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('img/redrstair.jpg') center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    header {
+      font-family: 'Creepster', sans-serif;
+      text-align: center;
+      padding: 1px;
+      background: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent black background for better readability */
+      overflow: hidden;
+      /* Ensure the text doesn't overflow the container */
+    }
+
+    #header-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      animation: moveText 14s linear infinite;
+      /* Adjust the duration and speed as needed */
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    #featured-video {
+      width: 60%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
+      padding: 1px;
+      height: auto;
+    }
+
+    #categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      /* Add margin for better spacing */
+    }
+
+    .category {
+      margin: 10px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      /* Semi-transparent black background for better readability */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .category:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      /* Lighter background on hover */
+    }
+
+    .button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: darkred;
+      /* Darker red on hover */
+    }
+    .back-button {
+      position: fixed;
+      top: 4px;
+      right: 4px;
+      background-color: darkred;
+      color: whitesmoke;
+      border: none;
+      padding: 1px 10px; /* Adjusted padding for the lowest padding */
+      font-size: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <button class="back-button" onclick="back()">
+    <h3>Home</h3>
+  </button>
+  <header>
+    <h2 id="header-text">"Ah, the creepiness level just went up in here. Hello, oh spooky one , Savor torment through cryptic avenues</h2>
+  </header>
+
+  <div id="categories">
+    <button class="category" onclick="loadCategory('Hurtcore')">Hurtcore</button>
+    <button class="category" onclick="loadCategory('Bondage')">Bondage</button>
+    <button class="category" onclick="loadCategory('Teens')">Teens</button>
+    <!-- Add more categories as needed -->
+  </div>
+
+  <div id="featured-video">
+    <!-- You can embed your featured video here using an iframe or any other suitable method -->
+    <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=loTmGGuibYQ" frameborder="0"
+      allowfullscreen></iframe>
+  </div>
+  <div class="button" onclick="showFullAccess()">
+    FULL ROOM ACCESS
+  </div>
+
+  <script>
+    function loadCategory(category) {
+      // You can add logic here to load videos of the selected category
+      alert('Loading videos for category: ' + category);
+    }
+
+    function showFullAccess() {
+      alert('FULL ROOM ACCESS WILL BE AVAILABLE SOON !! TILL THEN ENJOY OUR PREMIUM CONTENT AND CATEGORIES');
+    }
+
+    function back() {
+      window.location.href = 'index.html'; // Replace 'disclaimer.html' with the path to your disclaimer page
+    }
+  </script>
+
+</body>
+
+</html>

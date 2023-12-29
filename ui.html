@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EerieEscapade.onion</title>
+  <link rel="stylesheet" href="ui.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      /* Use 100vh for full-height container */
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      color: whitesmoke;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+    }
+
+    #home-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: red;
+      color: whitesmoke;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .redirect-button {
+      position: fixed;
+      top: 2px;
+      right: 2px;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .container {
+      flex-grow: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-container {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .chat-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .messages {
+      /* Add styling for chat messages if needed */
+    }
+
+    .input-container {
+      display: flex;
+      margin-top: 5px;
+      width: 100%;
+    }
+
+    #chat-input {
+      flex-grow: 1;
+      padding: 5px;
+      top: 20px;
+      width: auto;
+      margin-right: 0px;
+    }
+
+    #send-btn {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .icon {
+      text-align: center;
+      margin-top: 20px;
+      size-adjust: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <button id="home-button" onclick="home()">Home</button>
+    <h2>Savor torment through cryptic avenues <br> BITCOIN and ESCROW payments exclusively.</h2>
+  </header>
+
+  <!-- New button for redirection -->
+  <button class="redirect-button" onclick="redirectToNewPage()">PREMIUM USERS</button>
+
+  <div class="container">
+    <div class="video-container">
+      <video id="video1" controls width="100%">
+        <source src="clip1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="chat-box">
+      <div class="messages"></div>
+      <div class="input-container">
+        <input type="text" id="chat-input" placeholder="What You Want Us To Do">
+        <button id="send-btn">Order</button>
+      </div>
+    </div>
+
+    <div class="icon">
+      <img src="img/Bitcoin_Image.png" alt="Bitcoin Accepted">
+    </div>
+  </div>
+
+  <!-- JavaScript function for redirection -->
+  <script>
+    function redirectToNewPage() {
+      window.location.href = "premium.html"; // Replace "new_page.html" with the actual URL of the new page
+    }
+
+    function home() {
+      window.location.href = 'index.html';
+    }
+    const form = document.getElementById('send-btn')
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+    })
+  </script>
+
+  <footer>
+    © 2023 EerieEscapade.onion
+  </footer>
+
+</body>
+
+</html>

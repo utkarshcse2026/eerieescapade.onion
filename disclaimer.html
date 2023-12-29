@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer - EerieEscapade.onion</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: url('img/redrstair.jpg') center/cover no-repeat;
+      /* Replace 'background-image.jpg' with your actual background image */
+    }
+
+    }
+
+    #disclaimer {
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #disclaimer h2 {
+      color: palevioletred;
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    #disclaimer p {
+      color: palevioletred;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    
+    .back-button {
+      position: fixed;
+      top: 4px;
+      right: 4px;
+      background-color: darkred;
+      color: whitesmoke;
+      border: none;
+      padding: 1px 10px; /* Adjusted padding for the lowest padding */
+      font-size: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body> 
+  <div id="disclaimer">
+    <h2>Disclaimer - EerieEscapade.onion</h2>
+    <p>This website contains elements and clips taken from various series for entertainment purposes only.</p>
+    <p>We want to emphasize that this website is not dangerous, and we have no intention to harm anyone.</p>
+    <p>Only those with the guts for the eerie and mysterious should proceed. Faint-hearted individuals are advised to
+      stay away.</p>
+    <p>We are not responsible for any kind of mental disturbance that may be caused to viewers. Viewer discretion is
+      advised.</p>
+  </div>
+
+  
+  <button class="back-button" onclick="back()">
+    <h3>Home</h3>
+  </button>
+
+
+  
+  <script>
+    function back() {
+      window.location.href = 'index.html'; // Replace 'disclaimer.html' with the path to your disclaimer page
+    }
+  </script>
+  
+</body>
+
+</html>

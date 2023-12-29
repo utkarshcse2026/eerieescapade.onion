@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EerieEscapade</title>
+
+
+  
+  <style>
+    
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('img/redroom.jpg') center/cover no-repeat;
+    \
+   background-color: rgba(1, 1, 1, 1);
+
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header img {
+    height: 50px;
+    /* Adjust the height as needed */
+  }
+
+  header h1 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+  }
+
+  nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 450px;
+    margin: 20px auto;
+    color: whitesmoke;
+    /* Set text color to whitesmoke */
+  }
+
+  form footer {
+    text-align: center;
+    text-decoration: blueviolet;
+    margin-top: 20px;
+    text-shadow: darkturquoise;
+    color: black;
+    font-weight: bold;
+    /* Make the font bolder */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+    text-decoration: blueviolet;
+    margin-top: 20px;
+    text-shadow: darkturquoise;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+    .back-button {
+      position: fixed;
+      top: 4px;
+      right: 4px;
+      background-color: darkred;
+      color: whitesmoke;
+      border: none;
+      padding: 1px 10px; /* Adjusted padding for the lowest padding */
+      font-size: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+    
+</head>
+
+<body>
+
+
+  <nav>
+    <button class="back-button" onclick="back()">
+      <h3>Home</h3>
+    </button>
+  </nav>
+
+  <hr>
+  
+  <form id="loginForm">
+    <h2>Login to Enjoy Premium Content</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="validateLogin()">Login</button>
+    &nbsp;
+
+    <br>
+    <br>
+
+    &copy; 2023 EerieEscapade.onion
+
+
+  </form>
+
+    <script>
+    function back() {
+      window.location.href = 'index.html'; // Replace 'disclaimer.html' with the path to your disclaimer page
+    }
+  </script>
+
+
+
+
+      <script>
+          function validateLogin() {
+              var username = document.getElementById('username').value;
+              var password = document.getElementById('password').value;
+
+              // Basic validation (you should implement server-side validation for real projects)
+              if (username === 'utkarsh' && password === 'utkarsh@281') {
+                window.location.href = 'categories.html';
+                  // Redirect to another page (replace 'nextPage.html' with the actual file name)
+                alert('Login successful!');
+              } else {
+                  alert('Login failed. Please check your username and password.');
+              }
+          }
+      </script>
+  </body>
+  </html>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EerieEscapade.onion</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('img/redrstair.jpg') center/cover no-repeat; /* Replace 'background-image.jpg' with your actual background image */
+    }
+
+    #intro-text {
+      font-size: 50px;
+      font-weight: bold;
+      color: palevioletred; /* Adjust the color for better contrast */
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Creepster', sans-serif; /* Use 'Creepster' font */
+      position: relative;
+      overflow: hidden;
+    }
+
+    #moving-text {
+       font-size: 50px;
+      font-weight: bold;
+      color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      animation: moveText 20s linear infinite; /* Adjust the duration and speed as needed */
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    button {
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: darkred;
+      color: whitesmoke;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      color: whitesmoke;
+      margin-top: 20px;
+    }
+
+    .disclaimer-button {
+      position: fixed;
+      top: 4px;
+      right: 4px;
+      background-color: darkred;
+      color: whitesmoke;
+      border: none;
+      padding: 1px 10px; /* Adjusted padding for the lowest padding */
+      font-size: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="intro-text">
+    <div id="moving-text">Take Part In This Once-in-a-Lifetime Experience</div>
+
+    <p>
+      <br>
+      Access Types:
+      <br>
+      SPECTATOR(You Can Only Watch)<br>
+      MODERATOR(Full Room Access)</p>
+
+    <br>
+  </div>
+
+  <button onclick="enterSite()">
+    <h2>Join As Spectator</h2>
+  </button>
+
+  <button onclick="enter()">
+    <h2>Join As Moderator</h2>
+  </button>
+
+  <button class="disclaimer-button" onclick="showDisclaimer()">
+    <h3>Disclaimer</h3>
+  </button>
+
+  <script>
+    function enterSite() {
+      window.location.href = 'ui.html'; // Replace 'next-page.html' with the path to your next HTML file
+    }
+
+    function enter() {
+      window.location.href = 'premium.html'; // Replace 'next-page.html' with the path to your next HTML file
+    }
+
+    function showDisclaimer() {
+      window.location.href = 'disclaimer.html'; // Replace 'disclaimer.html' with the path to your disclaimer page
+    }
+  </script>
+
+  <footer> © 2023 EerieEscapade.onion </footer>
+
+</body>
+
+</html>
